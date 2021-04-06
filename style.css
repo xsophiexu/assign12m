@@ -1,0 +1,307 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+body::-webkit-scrollbar { display: none; }
+h1, h2, h3 { font-size: 2vw; }
+p { font-size: 1.6vw; }
+img { max-width: 100%; max-height: 100%; }
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: white;
+}
+
+#banner{
+  background-image: url(back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; width: 100vw;
+}
+#name h1{
+  position: absolute; font-weight: 600;
+  left: 6.61vw; bottom: 3vw;
+  font-size: 13vw; line-height: 28.22vh;
+  color: #FFFFFF;
+}
+#name h2{
+  position: absolute; font-weight: 600;
+  left: 41.61vw; top: 12.23vh;
+  font-size: 37.5vw; line-height: 77.6vh;
+  color: #FFFFFF60;
+}
+#aboutme{
+  line-height: 2.4vw;
+}
+
+.topNav{
+  z-index: 100;
+  background-image: url(bGradient.jpg);
+  width: 100vw; height: 3.4vw;
+  background-size: 100vw auto;
+  background-position: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2vw;
+  text-align: center;
+}
+#tNav{ background-image: url(bPaint.jpg); }
+.topNav a{
+  color: #B9CBD2;
+  padding-left: 1vw; padding-right: 1vw;
+  padding-bottom: 0.3vw;
+  margin-left: 0.7vw;
+  padding-top: 0.38vw;
+  text-decoration: none;
+}
+.topNav a.active{
+  border: 2.3px solid #B9CBD2;
+}
+.topNav a:hover{
+  border-bottom: 2.3px solid #B9CBD2;
+}
+
+#dPage a{ color: #B9CBD2; text-decoration: none; }
+#dPage a:hover{ text-decoration: underline; }
+#tPage a{ color: #B9CBD2; text-decoration: none; }
+#tPage a:hover{ text-decoration: underline; }
+#dPage{
+  position: absolute;
+  left: 2.52vw; top: 2.54vh;
+  font-size: 1.98vw;
+} #tPage{
+  position: absolute;
+  left: 81.72vw; top: 92.38vh;
+  font-size: 1.98vw;
+}
+
+.content{
+  margin: 4vw 6vw 2vw 6vw;
+  width: 88vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature{
+  padding: 1.8vw;
+  border: 3px solid #2C5AA8;
+}
+
+.general{
+  font-size: 2.3vw;
+  margin-top: 2vw;
+  padding-top: 1vw; padding-bottom: 3.8vw;
+  display: grid; grid-row-gap: 1.8vw;
+  grid-template: 25vw / 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: top;
+  text-align: center;
+}
+.general img{height: 25vw; align-items: top; }
+.general a{ text-decoration: none; }
+.roundButton{
+  margin-top: 0.4vw;
+  font-size: 1.4vw;
+  background: #0666B7;
+  color: #B9CBD2;
+  text-decoration: none;
+  padding: 0.75vw 1.2vw 0.6vw 1.2vw;
+  border-radius: 25px;
+}
+#fix{
+  width: 29vw; height: auto;
+  margin-top: 6.53vw;
+}
+.roundButton:hover{
+  border: 2.3px solid #0666B7;
+  background: linear-gradient(270deg, #62469A 0%, #49439B 33.26%, #2C5AA8 72.23%, #0666B7 100%);
+}
+.buttonC{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5vw;
+}
+#all{
+  padding-left: 1.5vw; padding-right: 1.5vw;
+}
+
+.describe{
+  position: relative;
+  top: -25.6vw; padding: 3vw;
+  height: 25vw;
+  text-align: left;
+  font-size: 1.3vw;
+  color: #FFFFFF00;
+  line-height: 1.8vw;
+}
+.describe:hover{
+  background-color: #021B3366;
+  font-weight: 600;
+  color: #EDF4F6;
+}
+
+.more{
+  font-size: 1.4vw;
+}
+.more{
+  color: #0666B7;
+  border: 2.3px solid #0666B7;
+  text-decoration: none;
+  padding: 0.8vw 1vw 0.7vw 1vw;
+}
+.more:hover{
+  background: linear-gradient(270deg, #62469A 0%, #49439B 33.26%, #2C5AA8 72.23%, #0666B7 100%);
+  color: #B9CBD2;
+}
+.label{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4vw;
+}
+h3{ font-size: 3vw; text-align: center; margin-bottom: 1vw;}
+
+#home{
+  background-image: url('home.png');
+  background-size: cover;
+  padding: 1vw;
+  position: fixed;
+  width: 3.6vw; height: 3.6vw;
+  bottom: 4.2vh; left: 1.7vw;
+  filter: grayscale(80%);
+}
+#home:hover{
+  filter: grayscale(0%);
+}
+
+.footer{
+  margin-top: 20vh;
+  text-align: right;
+  font-size: 1vw;
+  width: 88vw;
+  display: flex;
+  justify-content: space-between;
+}
+.socials{ display: flex; justify-content: flex-start; }
+.socials img{
+  width: 3vw; height: 3vw;
+  opacity: 50%;
+}
+.footer img:hover{
+  opacity: 100%;
+}
+#in{
+  width: 2.5vw; height: 2.5vw;
+}
+
+.specific{
+  font-size: 2.3vw;
+  margin-top: 2vw; margin-bottom: 2.3vw;
+  padding: 1.5vw;
+  display: grid; grid-row-gap: 1vw;
+  grid-template: repeat(6, 25vw) / 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.descrip{
+  width: 30vw;
+  text-align: left;
+  font-size: 1.6vw;
+}
+.fGrid{
+  display: flex;
+  margin-top: 2.5vw; margin-bottom: 4vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1vw;
+} .fGrid a{ object-fit: cover; }
+.fGrid img{
+  height: 22.5vw;
+  align-items: top;
+  margin-bottom: 1.5vw;
+}
+.stretch img{ height: 32vw; }
+.push{ padding-right: 2vw; }
+#vid{
+  margin-top: -4vw;
+  width: 88vw; height: 49.5vw;
+}
+.section{ width: 44vw; margin-top: 1.5vw; }
+#Riley{ margin-top: 3vw; display: flex; }
+#text{
+  padding-left: 2vw;
+  padding-right: 3.5vw;
+  padding-top: 3vw;
+}
+#text h1{ font-size:1.9vw; font-weight: 600; }
+.projectDis{ padding-right: 1vw; text-align: left; font-size: 1.4vw; }
+
+#logo { width: 230px; height: auto; }
+#clothe1{
+  display: grid;
+  grid-template: 30vw / 2fr 1fr;
+} #cDescription{ padding-right: 5vw; }
+#tDescription{ padding-right: 2vw; }
+#tech1{
+  display: grid; justify-items: right;
+  grid-template: 30vw / 1fr 1.7fr;
+}
+.cut{
+  height: 30vw;
+  object-fit: cover;
+  position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  p { font-size: 3.4vw; }
+  h1 { font-size: 3.4vw; }
+  a { font-size: 3.4vw; }
+  .buttonC a{ font-size: 2.5vw; }
+  .footer { font-size: 2vw; }
+  .socials img{ width: 5vw; height: 5vw; }
+  #in{ width: 4.5vw; height: 4.5vw; }
+  #name h1{
+    font-size: 21vw;
+    top: 32vw;
+  }
+  #name h2{
+    font-size: 55vw;
+    left: 55vw;
+    width: 5vw;
+    word-wrap: break-word;
+    height: 130vw;
+    line-height: 38vh;
+    text-align: center;
+  }
+  #dPage{
+    position: absolute;
+    left: 2.52vw; top: 2.54vh;
+    font-size: 1.98vw;
+  } #tPage{
+    position: absolute;
+    left: 70vw; top: 92.38vh;
+    font-size: 1.98vw;
+  }
+  .general{
+    grid-template: 48vw 48vw 48vw / 1fr;
+    grid-row-gap: 6vw;
+    font-size: 3.4vw;
+  }
+  .general img{ height: 48vw; }
+  .describe{
+    position: relative;
+    top: -48.6vw;
+    height: 48vw;
+    font-size: 2.8vw;
+    line-height: 3.3vw;
+  }
+  #fix{
+      width: 68vw; height: auto; }
+  #aboutme{
+    line-height: 4vw;
+  }
+}
